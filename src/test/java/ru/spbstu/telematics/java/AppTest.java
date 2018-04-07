@@ -29,10 +29,10 @@ public class AppTest {
     @Test
     public void testCreateDirectory() {
 
-        createFile = new File(NEWFOLDER + "folder");
+        createFile = new File(NEWFOLDER + ".folder");
         createFile.mkdir();
         check = new ContainList(NEWFOLDER);
-        Assert.assertEquals(check.list()[0], "folder");
+        Assert.assertEquals(check.list()[0], ".folder");
 
     }
 
