@@ -31,10 +31,8 @@ public class ContainList {
 
     public static void main(String[] args) {
 
-        ContainList list = new ContainList("/home/ilya/Documents/JavaParallel/");
+        ContainList list = new ContainList(args[0]);
         Arrays.stream(list.list()).forEach(System.out::println);
-
-
     }
 
 
